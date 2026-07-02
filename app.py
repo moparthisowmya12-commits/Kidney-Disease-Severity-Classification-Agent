@@ -6,7 +6,7 @@ model = joblib.load("best_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
 st.title("Kidney Disease Prediction")
-
+Age = st.number_input("Age")
 SerumCreatinine = st.number_input("SerumCreatinine")
 GFR = st.number_input("GFR")
 ProteinInUrine = st.number_input("ProteinInUrine")
